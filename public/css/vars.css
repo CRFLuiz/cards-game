@@ -1,0 +1,19 @@
+/* https://www.colourlovers.com/palette/56122/Sweet_Lolly */
+/* default => win => lose */
+:root{
+    --main-color: #FABE28;
+    --main-color-text: #003B24;
+    --main-color-rgb: rgb(250,190,40);
+    --primary-color: #00C176;
+    --primary-color-rgb: rgb(0,193,118);
+    --primary-color-auxiliar: #88C100;
+    --primary-color-auxiliar-rgb: rgb(136,193,0);
+    --secondary-color: #FF003C;
+    --secondary-color-rgb: rgb(255,0,60);
+    --secondary-color-auxiliar: #FF8A00;
+    --secondary-color-auxiliar-rgb: rgb(255,138,0);
+
+    --card-default-bgcolor: #ffc400;
+    --card-win-bgcolor: #5a6d49;
+    --card-lose-bgcolor: #6d4949;
+}

@@ -1,0 +1,14 @@
+{
+    "heroes": [
+        { "name": "Aria \"Chronomistress\" Warpweaver", "image": "Aria Chronomistress Warpweaver.png" },
+        { "name": "Colossus \"Beamguard\" Nova", "image": "Colossus Beamguard Nova.png" },
+        { "name": "Eldra \"Lifebough\" Stalwart", "image": "Eldra Lifebough Stalwart.png" },
+        { "name": "Goliath \"Raywarden\" Blaze", "image": "Goliath Raywarden Blaze.png" },
+        { "name": "Marina \"Pink Spear\" Seashield", "image": "Marina Pink Spear Seashield.png" },
+        { "name": "Selene \"Moonblade\" Nightwing", "image": "Selene Moonblade Nightwing.png" },
+        { "name": "Seraphis \"Pyramid Guardian\" Sandcoil", "image": "Seraphis Pyramid Guardian Sandcoil.png" },
+        { "name": "Thalion \"Greenwarden\" Leafstrike", "image": "Thalion Greenwarden Leafstrike.png" },
+        { "name": "Titan \"Laserbeast\" Photon", "image": "Titan Laserbeast Photon.png" },
+        { "name": "Torak \"Horned Titan\" Bullshield", "image": "Torak Horned Titan Bullshield.png" }
+    ]
+}

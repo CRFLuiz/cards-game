@@ -1,0 +1,68 @@
+{
+    "assassin": {
+      "physicalDamage": {"min": 80, "max": 100},
+      "magicDamage": {"min": 20, "max": 40},
+      "health": {"min": 300, "max": 500},
+      "energy": {"min": 100, "max": 150},
+      "physicalResistance": 0.1,
+      "magicResistance": 0.1,
+      "advantages": ["Mage"],
+      "weaknesses": ["Tank"],
+      "descHero": "Assassins are masters of quick and lethal damage. They excel at eliminating fragile targets, but their low resistance makes them vulnerable to direct attacks.",
+      "descAdvantage": "Eliminates Mages quickly, effective against Warriors.",
+      "descWeakness": "Vulnerable to Tanks due to low physical resistance."
+    },
+    "mage": {
+      "physicalDamage": {"min": 20, "max": 40},
+      "magicDamage": {"min": 80, "max": 100},
+      "health": {"min": 200, "max": 400},
+      "energy": {"min": 150, "max": 200},
+      "physicalResistance": 0.05,
+      "magicResistance": 0.2,
+      "advantages": ["Tank"],
+      "weaknesses": ["Assassin"],
+      "descHero": "Mages unleash powerful spells, wreaking havoc on groups of enemies. Their low physical resistance makes them easy targets for direct attacks.",
+      "descAdvantage": "Effective against Tanks due to lower magic resistance.",
+      "descWeakness": "Susceptible to quick attacks from Assassins."
+    },
+    "tank": {
+      "physicalDamage": {"min": 30, "max": 50},
+      "magicDamage": {"min": 30, "max": 50},
+      "health": {"min": 600, "max": 800},
+      "energy": {"min": 50, "max": 100},
+      "physicalResistance": 0.15,
+      "magicResistance": 0.15,
+      "advantages": ["Assassin", "Warrior"],
+      "weaknesses": ["Mage"],
+      "descHero": "Tanks are robust and difficult to bring down. They absorb damage to protect their allies, but their damage is moderate.",
+      "descAdvantage": "Resistant against Assassins and Warriors.",
+      "descWeakness": "Intense magic damage from Mages can be problematic."
+    },
+    "warrior": {
+      "physicalDamage": {"min": 50, "max": 70},
+      "magicDamage": {"min": 50, "max": 70},
+      "health": {"min": 400, "max": 600},
+      "energy": {"min": 100, "max": 150},
+      "physicalResistance": 0.1,
+      "magicResistance": 0.1,
+      "advantages": ["Assassin"],
+      "weaknesses": ["Tank"],
+      "descHero": "Warriors have a solid balance between damage and resistance. They are versatile, capable of handling different situations.",
+      "descAdvantage": "Effective against Assassins and can resist Mages.",
+      "descWeakness": "Can be overcome by Tanks due to lower resistance and health."
+    },
+    "orc": {
+      "physicalDamage": {"min": 60, "max": 80},
+      "magicDamage": {"min": 40, "max": 60},
+      "health": {"min": 500, "max": 700},
+      "energy": {"min": 80, "max": 120},
+      "physicalResistance": 0.15,
+      "magicResistance": 0.1,
+      "advantages": ["Warrior", "Mage"],
+      "weaknesses": ["Assassin"],
+      "descHero": "Orcs are brutal and resilient warriors. They have a balanced mix of physical and magical damage, making them versatile in combat.",
+      "descAdvantage": "Strong against Warriors and Mages due to balanced physical and magic resistance.",
+      "descWeakness": "Vulnerable to quick attacks from Assassins."
+    }
+  }
+  

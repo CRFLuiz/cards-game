@@ -1,0 +1,14 @@
+{
+    "heroes": [
+        { "name": "Agatha Shadowveil" , "image": "Agatha Shadowveil.png" },
+        { "name": "Aquos Emeraldstone" , "image": "Aquos Emeraldstone.png" },
+        { "name": "Aurora Skysoar" , "image": "Aurora Skysoar.png" },
+        { "name": "Cryos Crystalheart" , "image": "Cryos Crystalheart.png" },
+        { "name": "Ignis Amberstone" , "image": "Ignis Amberstone.png" },
+        { "name": "Lyria Starshard" , "image": "Lyria Starshard.png" },
+        { "name": "Lysandra Everchild" , "image": "Lysandra Everchild.png" },
+        { "name": "Seraphina Blueflame" , "image": "Seraphina Blueflame.png" },
+        { "name": "Seraphina Snakecharm" , "image": "Seraphina Snakecharm.png" },
+        { "name": "Zephyr Rosecrystal" , "image": "Zephyr Rosecrystal.png" }
+    ]
+}

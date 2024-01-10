@@ -1,0 +1,14 @@
+{
+    "heroes": [
+        { "name": "Captain Steelblade", "image": "Captain Steelblade.png" },
+        { "name": "Falconer \"Skyclaw\" Thorn", "image": "Falconer Skyclaw Thorn.png" },
+        { "name": "Hunter \"Sharpshot\" Wolfe", "image": "Hunter Sharpshot Wolfe.png" },
+        { "name": "Kaida Goldenrose", "image": "Kaida Goldenrose.png" },
+        { "name": "McKnockout", "image": "McKnockout.png" },
+        { "name": "Officer \"Grace\" Steele", "image": "Officer Grace Steele.png" },
+        { "name": "Seraphina Bladeheart", "image": "Seraphina Bladeheart.png" },
+        { "name": "Sergeant \"Marksman\" Stone", "image": "Sergeant Marksman Stone.png" },
+        { "name": "Shadowfang Nightclaw", "image": "Shadowfang Nightclaw.png" },
+        { "name": "Ursus Silentclaw", "image": "Ursus Silentclaw.png" }
+    ]
+}

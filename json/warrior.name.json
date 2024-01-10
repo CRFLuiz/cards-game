@@ -1,0 +1,14 @@
+{
+    "heroes": [
+        { "name": "Draven Warclaw", "image": "Draven Warclaw.png" },
+        { "name": "Elara Flamehart", "image": "Elara Flamehart.png" },
+        { "name": "Eldric Firebind", "image": "Eldric Firebind.png" },
+        { "name": "Lian Shadowveil", "image": "Lian Shadowveil.png" },
+        { "name": "Lycos Remnant", "image": "Lycos Remnant.png" },
+        { "name": "Ragnar Marstal", "image": "Ragnar Marstal.png" },
+        { "name": "Romar Wolfstride", "image": "Romar Wolfstride.png" },
+        { "name": "Thalia Greenleaf", "image": "Thalia Greenleaf.png" },
+        { "name": "Torben Aleblade", "image": "Torben Aleblade.png" },
+        { "name": "Zuri Steelheart", "image": "Zuri Steelheart.png" }
+    ]
+}

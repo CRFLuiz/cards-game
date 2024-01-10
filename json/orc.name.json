@@ -1,0 +1,14 @@
+{
+    "heroes": [
+        { "name": "Bran \"Stealthspear\" Blaze", "image": "Bran Stealthspear Blaze.png" },
+        { "name": "Brog \"Alekeeper\" Oakshield", "image": "Brog Alekeeper Oakshield.png" },
+        { "name": "Draka \"Gemshot\" Emberarrow", "image": "Draka Gemshot Emberarrow.png" },
+        { "name": "Grin \"Royal Shardpike\" Blaze", "image": "Grin Royal Shardpike Blaze.png" },
+        { "name": "Grok \"Cyclegrin\" Pedalbash", "image": "Grok Cyclegrin Pedalbash.png" },
+        { "name": "Gromm \"Thornshield\" Brute", "image": "Gromm Thornshield Brute.png" },
+        { "name": "Grunk \"Slugger\" Ironknuckle", "image": "Grunk Slugger Ironknuckle.png" },
+        { "name": "Mortha \"Crystalblade\" Elderfang", "image": "Mortha Crystalblade Elderfang.png" },
+        { "name": "Varn \"Bluesheen\" Stormblade", "image": "Varn Bluesheen Stormblade.png" },
+        { "name": "Zul \"Crystalpike\" Skyward", "image": "Zul Crystalpike Skyward.png" }
+    ]
+}

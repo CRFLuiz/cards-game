@@ -1,0 +1,314 @@
+@import 'vars.css';
+
+/* div{
+    border: 1px solid darkslategrey;
+} */
+
+body{
+    /* color: var(--main-color-text); */
+}
+
+#screenBasicControl{
+    height: 50px;
+    background-color: var(--primary-color-auxiliar);
+    padding: 3px 0;
+}
+
+#screenBasicControl button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#screenBasicControl div.col-6:nth-child(2){
+    text-align: right;
+}
+
+#screenPlayerA{
+    height: 70px;
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+}
+
+#screenPlayerA .title,
+#screenPlayerB .title{
+    font-size: 40px;
+}
+
+#screenPlayerA .screenPlayerA-right,
+#screenPlayerB .screenPlayerB-right{
+    text-align: right;
+}
+
+#screenPlayerB .screenPlayerB-left,
+#screenPlayerA .screenPlayerA-left{
+    text-align: left;
+}
+
+#screenMain{
+    height: 500px;
+}
+
+#screenPlayerB{
+    height: 70px;
+    background-color: var(--main-color);
+}
+
+
+#screenMain>div{
+    margin: 0;
+    padding: 0;
+}
+
+.monster-card-bg-title{
+    /* background-color: yellowgreen; */
+    height: 50px;
+    text-align: center;
+}
+
+.monster-card-bg-1{
+    background-color: var(--primary-color);
+    height: 250px;
+}
+
+.monster-card-bg-2{
+    background-color: var(--primary-color-auxiliar);
+    height: 250px;
+}
+
+.monster-card-bg-3{
+    background-color: var(--main-color);
+    /* background-color: slateblue; */
+    height: 450px;
+}
+
+.monster-card-bg-4{
+    background-color: var(--secondary-color);
+    height: 250px;
+}
+
+.monster-card-bg-5{
+    background-color: var(--secondary-color-auxiliar);
+    height: 250px;
+}
+
+#screenMain .paintingMediumHero{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#screenMain .paintingMediumHero .box1{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+#screenMain .paintingMediumHero .box2{
+    width: calc(100% - 250px);
+    height: 250px;
+    overflow: hidden;
+}
+
+#screenMain .paintingMediumHero .box1 img{
+    width: 100%;
+}
+
+#screenMain .paintingMediumHero .box2>div{
+    padding-left: 10px;
+}
+
+#screenMain .paintingMediumHero .box2 .nameBox{
+    font-weight: bold;
+}
+
+#screenMain .paintingMediumHero .box2 .typeBox{
+    /* font-weight: bold; */
+    color: rgb(83, 82, 82);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#screenMain .paintingMediumHero .box2 .statsBoxA>div{
+    white-space: nowrap; /* Impede que o texto quebre para uma nova linha */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa o tamanho do contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar que o texto foi cortado */
+}
+
+#screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox{
+    display: block;
+    /* display: flex; */
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox .box1,
+#screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox .box2{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+}
+
+#screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox .box2 .typeBox{
+    margin-bottom: 10px;
+}
+
+.paintingSmallHero{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+    /* position: absolute; */
+}
+
+.paintingSmallHero.loss{
+    background-color: red;
+}
+.paintingSmallHero.win{
+    background-color: lime;
+}
+.paintingSmallHero.active{
+    border: 2px solid black;
+    /* margin: 3px; */
+}
+
+.paintingSmallHero .blur{
+    background-color: rgba(67, 67, 67, 0.413);
+    width: 70px;
+    height: 70px;
+}
+
+.paintingSmallHero .imageDiv{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.paintingSmallHero.active .imageDiv{
+    margin: 3px;
+}
+
+.paintingSmallHero .imageDiv img{
+    width: 100%;
+}
+
+.gameButtonsDiv,
+.gameMatchDiv{
+    border-right: 1px solid black;
+}
+
+.gameButtonsDiv .row,
+.gameStatusDiv .row{
+    padding: 10px;
+}
+
+.gameButtonsDiv .titleDiv button{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 0;
+    font-size: 40px;
+    text-align:center; vertical-align:middle;
+}
+
+.titleDivParagraph{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gameMatchDiv{
+    background-color: lightgray;
+}
+
+.matchRow>div{
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.cardDiv{
+    border: 1px solid black;
+    border-radius: 10px;
+    /* margin: 5px;
+    padding: 5px; */
+    width: 250px;
+    overflow: hidden;
+    background-color: lemonchiffon;
+}
+
+.cardDiv .firstSectionRow p,
+.cardDiv .thirdSectionRow .titleDivRow{
+    margin: 0;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+.cardDiv .firstSectionRow p.typeParagraph{
+    color: rgb(194, 193, 193);
+}
+
+.cardDiv .secondSectionRow .imageDiv>div{
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
+
+.cardDiv .secondSectionRow .imageDiv{
+    overflow: hidden;
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.cardDiv .secondSectionRow .imageDiv img{
+    width: 250px;
+}
+
+.infoDiv p{
+    margin: 0;
+    text-align: center;
+}
+
+.infoDiv .healthMaxDiv,
+.infoDiv .energyMaxDiv{
+    border: 1px solid black;
+}
+
+.infoDiv .healthPercent{
+    background-color: green;
+}
+.infoDiv .energyPercent{
+    background-color: yellow;
+}
+
+.iconDivDamage,
+.iconDivResistance{
+    text-align: right;
+}
+
+.cardDiv .thirdSectionRow{
+    text-align: center;
+}
+.cardDiv .thirdSectionRow p{
+    margin: 0;
+}
+
+.historyLogs{
+    height: 300px;
+    width: 90%;
+    border: 3px dashed gray;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+.gameMatchDiv .titleDiv div,
+.gameMatchDiv .player1Div div,
+.gameMatchDiv .player2Div div{
+    border: 1px solid black;
+    overflow: hidden;
+}
