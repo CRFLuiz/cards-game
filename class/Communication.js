@@ -129,7 +129,6 @@ class Communication{
                     room.player1[room.round > 0 ? room.round - 1 : 0].othersAction(move.actionId, room.player2[room.round > 0 ? room.round - 1 : 0]);
                     break;
             }
-            console.log('DEBUG', room.round, room.pontuation, room.pontuation[0], room.pontuation[0][room.round - 1])
             room.turns.push(move);
             room.history.push({ player: 1, move });
             room.pontuation[0][room.round - 1] = (room.player2[room.round > 0 ? room.round - 1 : 0].maxHealth - room.player2[room.round > 0 ? room.round - 1 : 0].health) / room.player2[room.round > 0 ? room.round - 1 : 0].maxHealth;
@@ -149,7 +148,6 @@ class Communication{
         }
         this.player1Properties(room);
         this.player2RandomAction(room);
-        console.log('fim playerMove')
     }
 }
 

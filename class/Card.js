@@ -115,7 +115,6 @@ class Card{
     }
 
     checkWinLoss(enemy){
-        console.log('checkWinLoss')
         if(this.health <= 0){
             let er = new Error({ win: enemy, loss: this });
             er.name = "WinLoss";
@@ -133,7 +132,6 @@ class Card{
     }
 
     attackAction(id, target){
-        console.log('attackAction', { id, target: target.hero.name })
         let actionId = this.atks.findIndex(val => val.actionId == id);
         let damage = this.attack(actionId);
         if(damage.energy > this.energy){
@@ -148,7 +146,6 @@ class Card{
     }
 
     spellAction(id, target){
-        console.log('spellAction', { id, target: target.hero.name })
         let actionId = this.spells.findIndex(val => val.actionId == id);
         let damage = this.spell(actionId);
         if(damage.energy > this.energy){
@@ -163,7 +160,6 @@ class Card{
     }
 
     othersAction(id, target){
-        console.log('othersAction', { id, target: target.hero.name })
         this.pass();
 
         this.checkActions();
