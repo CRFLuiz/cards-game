@@ -69,7 +69,6 @@ const renderPontuationPlayer2Div = (pontuation) => {
 }
 
 const renderPontuation = (pontuation) => {
-    // const screen = document.getElementById('screenMain');
     const screen = document.querySelector('.gameMatchDiv');
     screen.innerHTML = '';
 
@@ -154,7 +153,6 @@ const renderStatusHistory = obj => {
 
 const renderStatus = obj => {
     const statusDiv = createElementAndAddClass(['statusDiv']);
-    // const statusDiv = createElementAndAddClass(['row', 'statusDiv']);
     const statusInfoDiv = renderStatusInfo(obj);
     const statusHistoryDiv = renderStatusHistory(obj);
 
@@ -185,8 +183,6 @@ const secondSectionCardFunction = (imageUrl) => {
     const div = document.createElement('div');
     const image = createElementAndAddClass([], 'img');
     image.src = imageUrl;
-    // imageDiv.appendChild(image);
-    // secondSectionRow.appendChild(imageDiv);
     div.appendChild(image);
     imageDiv.appendChild(div);
     secondSectionRow.appendChild(imageDiv);

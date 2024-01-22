@@ -23,8 +23,6 @@ io.on('connection', (socket) => {
 
 
     const communication = new Communication(socket, game);
-    // communication.listening();
-    // websocket(socket);
 
     socket.on('disconnection', obj => {
         console.log('User left', socket.id);

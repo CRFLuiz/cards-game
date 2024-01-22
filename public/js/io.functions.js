@@ -15,25 +15,7 @@ const ioFunctions = () => {
         screenB.innerHTML = '';
         for(let i = 0; i < obj.player1.length; i++){
             let smallCard1 = paintingSmallCard(obj.player1[i]);
-            // smallCard1.style.left = `${(i + 1) * 80}px`;
             let smallCard2 = paintingSmallCard(obj.player2[i]);
-            // smallCard2.style.left = `${(i + 1) * 80}px`;
-
-            // switch(i){
-            //     case 0:
-            //         smallCard1.classList.add('loss');
-            //         smallCard2.classList.add('win');
-            //         break;
-            //     case 1:
-            //     case 2:
-            //         smallCard1.classList.add('win');
-            //         smallCard2.classList.add('loss');
-            //         break;
-            //     case 3:
-            //         smallCard1.classList.add('active');
-            //         smallCard2.classList.add('active');
-            //         break;
-            // }
 
             screenA.appendChild(smallCard1);
             screenB.appendChild(smallCard2);
