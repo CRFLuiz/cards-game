@@ -15,13 +15,6 @@ class Card{
         this.loadSpells();
         
         this.heal = Math.floor(this.multiplier * 5);
-
-        // this.health = this.hero.health;
-        // this.energy = this.hero.energy;
-        // this.physicalDamage = this.hero.physicalDamage;
-        // this.magicDamage = this.hero.magicDamage;
-        // this.physicalResistance = this.hero.physicalResistance;
-        // this.magicResistance = this.hero.magicResistance;
     }
 
     loadMultiplier(){
@@ -74,7 +67,6 @@ class Card{
     }
 
     attack(i){
-        // let damage = Math.floor(this.atks[i].damage * this.hero.physicalDamage);
         let damage = this.atks[i].damage
         let energy = this.atks[i].energy;
         let type = 'physicalDamage';
@@ -82,7 +74,6 @@ class Card{
     }
 
     spell(i){
-        // let damage = Math.floor(this.spells[i].damage * this.hero.magicDamage);
         let damage = this.spells[i].damage;
         let energy = this.spells[i].energy;
         let type = 'magicDamage';
@@ -90,16 +81,6 @@ class Card{
     }
 
     receivedDamage(damage){
-        /*if(damage.type = 'physicalDamage'){
-            let dam = Math.floor(damage.damage - (damage.damage * this.physicalResistance));
-            this.health = this.health - dam <= 0 ? 0 : this.health - dam;
-            return;
-        }
-        if(damage.type = 'magicDamage'){
-            let dam = Math.floor(damage.damage - (damage.damage * this.magicResistance));
-            this.health = this.health - dam <= 0 ? 0 : this.health - dam;
-            return;
-        }*/
         let dam = Math.floor(damage.damage - (damage.damage * (damage.type == 'physicalDamage' ? this.physicalResistance : this.magicResistance)));
         this.health = this.health - dam <= 0 ? 0 : this.health - dam;
         console.log(this.hero.name, 'received', damage.damage, 'of total', damage.type, 'from', damage.enemy.hero.name, 'Blocked:', damage.damage - dam);
@@ -134,7 +115,6 @@ class Card{
     }
 
     checkWinLoss(enemy){
-        console.log('checkWinLoss')
         if(this.health <= 0){
             let er = new Error({ win: enemy, loss: this });
             er.name = "WinLoss";
@@ -152,7 +132,6 @@ class Card{
     }
 
     attackAction(id, target){
-        console.log('attackAction', { id, target: target.hero.name })
         let actionId = this.atks.findIndex(val => val.actionId == id);
         let damage = this.attack(actionId);
         if(damage.energy > this.energy){
@@ -167,7 +146,6 @@ class Card{
     }
 
     spellAction(id, target){
-        console.log('spellAction', { id, target: target.hero.name })
         let actionId = this.spells.findIndex(val => val.actionId == id);
         let damage = this.spell(actionId);
         if(damage.energy > this.energy){
@@ -182,7 +160,6 @@ class Card{
     }
 
     othersAction(id, target){
-        console.log('othersAction', { id, target: target.hero.name })
         this.pass();
 
         this.checkActions();

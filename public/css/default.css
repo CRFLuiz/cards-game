@@ -1,9 +1,5 @@
 @import 'vars.css';
 
-/* div{
-    border: 1px solid darkslategrey;
-} */
-
 body{
     /* color: var(--main-color-text); */
 }
@@ -60,7 +56,6 @@ body{
 }
 
 .monster-card-bg-title{
-    /* background-color: yellowgreen; */
     height: 50px;
     text-align: center;
 }
@@ -77,7 +72,6 @@ body{
 
 .monster-card-bg-3{
     background-color: var(--main-color);
-    /* background-color: slateblue; */
     height: 450px;
 }
 
@@ -123,28 +117,24 @@ body{
 }
 
 #screenMain .paintingMediumHero .box2 .typeBox{
-    /* font-weight: bold; */
     color: rgb(83, 82, 82);
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 #screenMain .paintingMediumHero .box2 .statsBoxA>div{
-    white-space: nowrap; /* Impede que o texto quebre para uma nova linha */
-    overflow: hidden; /* Oculta o conteúdo que ultrapassa o tamanho do contêiner */
-    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar que o texto foi cortado */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox{
     display: block;
-    /* display: flex; */
     overflow-x: auto;
     overflow-y: hidden;
 }
 #screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox .box1,
 #screenMain .col-12.monster-card-bg-3 .paintingMediumHero .heroBox .box2{
-    /* display: flex;
-    flex-direction: column; */
     margin: 0 auto;
 }
 
@@ -160,7 +150,6 @@ body{
     display: inline-block;
     margin-right: 10px;
     border-radius: 5px;
-    /* position: absolute; */
 }
 
 .paintingSmallHero.loss{
@@ -171,7 +160,6 @@ body{
 }
 .paintingSmallHero.active{
     border: 2px solid black;
-    /* margin: 3px; */
 }
 
 .paintingSmallHero .blur{
@@ -225,16 +213,14 @@ body{
 }
 
 .matchRow>div{
-    display: flex; /* Utiliza flexbox para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardDiv{
     border: 1px solid black;
     border-radius: 10px;
-    /* margin: 5px;
-    padding: 5px; */
     width: 250px;
     overflow: hidden;
     background-color: lemonchiffon;
@@ -259,9 +245,9 @@ body{
 
 .cardDiv .secondSectionRow .imageDiv{
     overflow: hidden;
-    display: flex; /* Utiliza flexbox para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardDiv .secondSectionRow .imageDiv img{

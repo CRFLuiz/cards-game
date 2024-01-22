@@ -83,14 +83,10 @@ class Game{
         let heroes = [
             Math.floor(Math.random() * assassins.heroes.length),
             Math.floor(Math.random() * mages.heroes.length),
-            /*Math.floor(Math.random() * warriors.heroes.length),
-            Math.floor(Math.random() * orcs.heroes.length),
-            Math.floor(Math.random() * tanks.heroes.length)*/
             Math.floor(Math.random() * assassins.heroes.length),
             Math.floor(Math.random() * mages.heroes.length),
             Math.floor(Math.random() * assassins.heroes.length),
         ];
-        // let types = ['assassin', 'mage', 'warrior', 'orc', 'tank'];
         let types = ['assassin', 'mage', 'assassin', 'mage', 'assassin'];
         for(let i = 0; i < heroes.length; i++){
             heroes[i] = this.filterHero([{ prop: 'type', val: types[i] }])[heroes[i]];
